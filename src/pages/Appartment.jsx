@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RealEstate = () => {
+const Appartment = () => {
   return (
     <div>
       <h1>Logement Page</h1>
@@ -8,4 +8,4 @@ const RealEstate = () => {
   );
 };
 
-export default RealEstate;
+export default Appartment;

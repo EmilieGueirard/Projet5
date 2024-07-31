@@ -1,0 +1,15 @@
+@import 'Home';
+@import 'Header';
+@import 'Footer';
+@import 'About';
+@import 'Appartment';
+@import 'NotFound';
+@import 'variables';
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: $font-text;
+}
