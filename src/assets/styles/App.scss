@@ -1,11 +1,13 @@
 @import "~normalize.css/normalize.css";
-@import 'Home';
-@import 'Header';
+@import 'variables';
+@import 'NavBar';
 @import 'Footer';
+@import 'Home';
+@import 'Banner';
+@import 'Gallery';
 @import 'About';
 @import 'Appartment';
 @import 'NotFound';
-@import 'variables';
 
 * {
   margin: 0;
