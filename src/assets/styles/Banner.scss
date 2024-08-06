@@ -5,14 +5,14 @@
     position: relative;
     background: $black-color;
     border-radius: 25px;
-    margin: 0 100px 22px 100px;
+    margin-bottom: 22px;
     text-align: center;
     color: $white-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @media (max-width: 768px) {
         height: 111px;
-        margin: 0 20px 22px 20px;
+        margin-bottom: 22px;
       }
     
     &__img img {

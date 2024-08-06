@@ -4,13 +4,14 @@ import Card from './Card';
 import data from '../datas/apartments.json'
 
 const Gallery = () => {
+
     return (
         <div className='gallery'>
             {data.map((apartment) =>(
         <div key={apartment.id} className='gallery__item'>
-            <Link to={`/apartments/${apartment.id}`}>
+            <Link to={`/appartement/${apartment.id}`}>
             <Card key={apartment.id} caption={apartment.title} img={apartment.cover} />
-            </Link>
+            </Link >
         </div>
         ))}
         </div>

@@ -2,7 +2,6 @@
 @import 'variables';
 @import 'NavBar';
 @import 'Footer';
-@import 'Home';
 @import 'Banner';
 @import 'Gallery';
 @import 'About';
@@ -20,4 +19,12 @@ body {
   margin: auto;
   width: 100%;
   box-sizing: border-box;
+}
+
+.main {
+  padding-inline: 100px;
+
+  @media (max-width: 768px) {
+    padding-inline: 20px;
+  }
 }
