@@ -6,16 +6,16 @@ import NotFound from '../pages/NotFound';
 const Host = () => {
 
     const { id } = useParams();
-    const host = data.find((data) => data.id === id);
+    const hostData = data.find((data) => data.id === id);
 
-    if (!host) {
+    if (!hostData) {
         return <NotFound />
     }
 
     return (
         <div className='host'> 
-            <div className='host__name'>{host.host.name}</div>
-            <img className='host__img'src={host.host.picture}  alt={host.host.name}></img>
+            <div className='host__name'>{hostData.host.name}</div>
+            <img className='host__img'src={hostData.host.picture}  alt={hostData.host.name}></img>
          </div>
         
     );

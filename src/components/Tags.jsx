@@ -13,9 +13,9 @@ const Tags = () => {
     }
 
     return (
-        <div className='apartment__columnLeft--tags'>
+        <div className='tags'>
              {tagsData.tags.map((tag, index) => (
-                <div className='apartment__columnLeft--tags--item'  key={index}>{tag}
+                <div className='tags__item'  key={index}>{tag}
                 </div>
             ))}
         </div>

@@ -5,9 +5,12 @@ import data from '../datas/apartments.json';
 import Tags from '../components/Tags';
 import Host from '../components/Host';
 import NotFound from './NotFound';
+import Collapse from '../components/Collapse';
+import DescriptionAppart from '../components/DescriptionAppart';
+import EquipmentsAppart from '../components/EquipmentsAppart';
 
 const Apartment = () => {
-  const { id } = useParams();
+    const { id } = useParams();
     const apartment = data.find((data) => data.id === id);
   
     if (!apartment) {
@@ -15,15 +18,25 @@ const Apartment = () => {
     }
 
   return (
-    <div className='apartment'>
-      <div className='apartment__columnLeft'>
-        <h2 className='apartment__columnLeft--title'>{apartment.title}</h2>
-        <h3 className='apartment__columnLeft--location'>{apartment.location}</h3>
-        <Tags id={id} />
+    <div>
+      <div className='apartInfos'>
+        <div className='apartInfos__left'>
+          <h2 className='apartInfos__left--title'>{apartment.title}</h2>
+          <h3 className='apartInfos__left--location'>{apartment.location}</h3>
+          <Tags id={id} />
+        </div>
+        <div className='apartInfos__right'>
+          <Host id={id}/>
+          <Rating rating={apartment.rating} />
+        </div>  
       </div>
-      <div className='apartment__columnRight'>
-        <Host id={id}/>
-        <Rating rating={apartment.rating} />
+      <div className='apartCollapse'>
+        <Collapse title={"Description"}>
+        <DescriptionAppart id={id} />
+        </Collapse>
+        <Collapse title="Équipements">
+        <EquipmentsAppart id={id} />
+        </Collapse>
       </div>
     </div>
   );
