@@ -1,5 +1,6 @@
 import React from 'react';
-import NavBar from './NavBar';
+import PropTypes from 'prop-types';
+import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 
 const Layout = ({ children }) => {
@@ -12,6 +13,10 @@ const Layout = ({ children }) => {
       <Footer />
     </div>
   );
+};
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

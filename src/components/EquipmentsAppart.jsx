@@ -9,13 +9,13 @@ const EquipmentsAppart = () => {
     const equipmentsData = data.find((data) => data.id === id);
     const equipments = equipmentsData.equipments;
 
+    if (!equipmentsData) {
+        return <NotFound />;
+    }
+    
     const equipmentsList = equipments.map((index) => 
         <p key={index}>{index}</p>
     )
-
-    if (!equipmentsData) {
-        return <NotFound />
-    }
 
     return (
         <div>

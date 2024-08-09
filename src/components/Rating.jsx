@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
@@ -12,6 +13,10 @@ const Rating = ({ rating }) => {
   ));
 
   return <div className='rating'>{stars}</div>;
+};
+
+Rating.propTypes = {
+  rating: PropTypes.string.isRequired,
 };
 
 export default Rating;

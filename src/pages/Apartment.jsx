@@ -8,6 +8,7 @@ import NotFound from './NotFound';
 import Collapse from '../components/Collapse';
 import DescriptionAppart from '../components/DescriptionAppart';
 import EquipmentsAppart from '../components/EquipmentsAppart';
+import Slideshow from '../components/Slideshow';
 
 const Apartment = () => {
     const { id } = useParams();
@@ -19,6 +20,7 @@ const Apartment = () => {
 
   return (
     <div>
+       <Slideshow images={apartment.pictures} />
       <div className='apartInfos'>
         <div className='apartInfos__left'>
           <h2 className='apartInfos__left--title'>{apartment.title}</h2>
