@@ -7,8 +7,8 @@ import data from '../datas/aboutList.json';
 const About = () => {
   return (
     <div>
-    <Banner img={BannerImg} alt="Paysage de montagnes"></Banner>
-    <div className="aboutCollapse" >
+      <Banner img={BannerImg} alt="Paysage de montagnes"></Banner>
+      <div className="aboutCollapse" >
         {data.map(item => (
           <Collapse
             key={item.title}
@@ -17,7 +17,7 @@ const About = () => {
           />
         ))}
       </div>
-  </div>
+    </div>
   );
 };
 
