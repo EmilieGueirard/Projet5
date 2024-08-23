@@ -15,11 +15,10 @@ const Tags = () => {
     return (
         <div className='tags'>
              {tagsData.tags.map((tag, index) => (
-                <div className='tags__item'  key={index}>{tag}
+                <div className='tags__item' key={index}>{tag}
                 </div>
             ))}
         </div>
-        
     );
 };
 

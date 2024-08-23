@@ -14,7 +14,6 @@ const Router = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/a-propos" element={<About />} />
                     <Route path="/appartement/:id" element={<Apartment />} />
-                    <Route path="/erreur" element={<NotFound />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </Layout>

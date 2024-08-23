@@ -15,7 +15,7 @@ const Host = () => {
     return (
         <div className='host'> 
             <div className='host__name'>{hostData.host.name}</div>
-            <img className='host__img'src={hostData.host.picture}  alt={hostData.host.name}></img>
+            <img className='host__img'src={hostData.host.picture} alt={hostData.host.name}></img>
          </div>
         
     );

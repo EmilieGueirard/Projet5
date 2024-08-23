@@ -6,8 +6,8 @@ import Tags from '../components/Tags';
 import Host from '../components/Host';
 import NotFound from './NotFound';
 import Collapse from '../components/Collapse';
-import DescriptionAppart from '../components/DescriptionAppart';
-import EquipmentsAppart from '../components/EquipmentsAppart';
+import DescriptionApart from '../components/DescriptionApart';
+import EquipmentsApart from '../components/EquipmentsApart';
 import Slideshow from '../components/Slideshow';
 
 const Apartment = () => {
@@ -33,11 +33,11 @@ const Apartment = () => {
         </div>  
       </div>
       <div className='apartCollapse'>
-        <Collapse title={"Description"}>
-        <DescriptionAppart id={id} />
+        <Collapse title="Description">
+        <DescriptionApart id={id} />
         </Collapse>
         <Collapse title="Équipements">
-        <EquipmentsAppart id={id} />
+        <EquipmentsApart id={id} />
         </Collapse>
       </div>
     </div>

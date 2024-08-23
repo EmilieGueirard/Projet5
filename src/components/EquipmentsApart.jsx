@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import data from '../datas/apartments.json';
 import NotFound from '../pages/NotFound';
 
-const EquipmentsAppart = () => {
+const EquipmentsApart = () => {
 
     const { id  } = useParams();
     const equipmentsData = data.find((data) => data.id === id);
@@ -24,4 +24,4 @@ const EquipmentsAppart = () => {
     );
 };
 
-export default EquipmentsAppart;
+export default EquipmentsApart;

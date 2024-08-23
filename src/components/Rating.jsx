@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const Rating = ({ rating }) => {
-    const stars = Array.from({length: 5}).map((value, index)=> (
+    const stars = Array.from({length: 5}).map((_, index)=> (
     <FontAwesomeIcon
       key={index}
       icon={faStar}

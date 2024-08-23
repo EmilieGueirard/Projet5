@@ -26,25 +26,16 @@ const Slideshow = ({ images }) => {
 
   return (
     <div className="slideshow">
-      <FontAwesomeIcon
-        icon={faChevronLeft}
-        className="arrow arrow__left"
-        onClick={prevSlide}
+      <FontAwesomeIcon icon={faChevronLeft} className="arrow arrow__left" onClick={prevSlide}
       />
       <div className="slideshow__container">
-        <img
-          src={images[currentIndex]}
-          alt={`slide ${currentIndex + 1}`}
-          className="slideshow__image"
+        <img src={images[currentIndex]} alt={`slide ${currentIndex + 1}`} className="slideshow__image"
         />
         <div className="slideshow__number">
           {currentIndex + 1}/{images.length}
         </div>
       </div>
-      <FontAwesomeIcon
-        icon={faChevronRight}
-        className="arrow arrow__right"
-        onClick={nextSlide}
+      <FontAwesomeIcon icon={faChevronRight} className="arrow arrow__right" onClick={nextSlide}
       />
     </div>
   );

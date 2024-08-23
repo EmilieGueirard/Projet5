@@ -11,7 +11,7 @@ const Banner = ({img, alt, txt1, txt2}) => {
                 <p className="banner__text--p2">{txt2}</p>
             </div>
         </div>
-);
+    );
 };
 
-export default Banner
+export default Banner;
